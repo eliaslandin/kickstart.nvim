@@ -1,4 +1,4 @@
---[[
+--[[lazy
 
 =====================================================================
 ==================== READ THIS BEFORE CONTINUING ====================
@@ -692,6 +692,15 @@ require('lazy').setup({
       local ensure_installed = vim.tbl_keys(servers or {})
       vim.list_extend(ensure_installed, {
         'stylua', -- Used to format Lua code
+        'prettier',
+        'cssls',
+        'html-lsp',
+        'sqlls',
+        'rust_analyzer',
+        'dockerls',
+        'jsonls',
+        'tailwindcss',
+        'yamlls',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
