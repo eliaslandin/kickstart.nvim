@@ -33,5 +33,6 @@ return {
     },
   },
 
-  vim.keymap.set('n', '<leader>nt', ':term<CR>', { desc = '[n]ew [t]erminal' }),
+  -- Open new terminal
+  vim.keymap.set('n', '<leader>nt', ':term<CR>', { desc = '[N]ew [T]erminal' }),
 }
