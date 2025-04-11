@@ -35,4 +35,7 @@ return {
 
   -- Open new terminal
   vim.keymap.set('n', '<leader>nt', ':term<CR>', { desc = '[N]ew [T]erminal' }),
+
+  -- Change local working directory to current directory
+  vim.keymap.set('n', '<leader>l', ':lcd %:p:h<CR>', { desc = '[l]cd to current dir' }),
 }
