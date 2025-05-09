@@ -896,7 +896,7 @@ require('lazy').setup({
     opts = {
       transparent = true,
       borderless_pickers = true,
-      hide_fillchars = true,
+      -- hide_fillchars = true,
       highlights = {
         Visual = { bg = '#3c59a3' },
       },
