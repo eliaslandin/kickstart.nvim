@@ -104,6 +104,14 @@ vim.o.termguicolors = true
 vim.o.number = true
 vim.o.relativenumber = true
 
+-- Default to two spaces as indentation
+vim.opt.expandtab = true
+vim.opt.tabstop = 2
+vim.opt.shiftwidth = 2
+vim.opt.softtabstop = 2
+vim.opt.smartindent = true
+vim.opt.autoindent = true
+
 -- Enable mouse mode, can be useful for resizing splits for example!
 vim.o.mouse = 'a'
 

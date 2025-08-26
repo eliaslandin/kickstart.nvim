@@ -67,9 +67,9 @@ return {
     end,
   },
 
-  {
-    'mattn/emmet-vim',
-  },
+  -- {
+  --   'mattn/emmet-vim',
+  -- },
 
   -- Open new terminal
   vim.keymap.set('n', '<leader>nt', ':term<CR>', { desc = '[N]ew [T]erminal' }),
