@@ -769,6 +769,7 @@ require('lazy').setup({
         'jsonls',
         'tailwindcss',
         'yamlls',
+        'gofumpt',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
@@ -830,6 +831,7 @@ require('lazy').setup({
         json = { 'prettier' },
         yaml = { 'prettier' },
         rust = { 'prettier' },
+        go = { 'gofumpt' },
         -- Conform can also run multiple formatters sequentially
         -- python = { "isort", "black" },
         --
