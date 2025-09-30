@@ -742,6 +742,7 @@ require('lazy').setup({
             },
           },
         },
+        gopls = {},
       }
 
       -- Ensure the servers and tools above are installed
@@ -770,7 +771,6 @@ require('lazy').setup({
         'tailwindcss',
         'yamlls',
         'gofumpt',
-        'gopls',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
