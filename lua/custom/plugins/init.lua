@@ -15,6 +15,18 @@ return {
   },
 
   {
+    'OlegGulevskyy/better-ts-errors.nvim',
+    dependencies = { 'MunifTanjim/nui.nvim' },
+    config = function()
+      require('better-ts-errors').setup {
+        keymaps = {
+          toggle = '<leader>w',
+        },
+      }
+    end,
+  },
+
+  {
     'nvim-treesitter/nvim-treesitter-context',
     opts = {
       enable = true, -- Enable this plugin (Can be enabled/disabled later via commands)
