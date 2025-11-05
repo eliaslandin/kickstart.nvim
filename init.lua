@@ -770,7 +770,7 @@ require('lazy').setup({
         'tailwindcss',
         'yamlls',
         'gofumpt',
-        'postgrestools',
+        'postgres-language-server',
       })
       require('mason-tool-installer').setup { ensure_installed = ensure_installed }
 
