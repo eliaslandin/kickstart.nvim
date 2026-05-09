@@ -1,0 +1,18 @@
+require('conform').setup {
+  format_on_save = function(bufnr)
+    local disable_filetypes = { c = true, cpp = true }
+    if disable_filetypes[vim.bo[bufnr].filetype] then
+      return nil
+    end
+    return { timeout_ms = 500, lsp_format = 'fallback' }
+  end,
+  formatters_by_ft = {
+    typescript = { 'prettier' },
+    typescriptreact = { 'prettier' },
+    javascript = { 'prettier' },
+    javascriptreact = { 'prettier' },
+    json = { 'prettier' },
+    markdown = { 'prettier' },
+    lua = { 'stylua' },
+  },
+}
